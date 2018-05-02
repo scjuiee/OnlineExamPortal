@@ -1,0 +1,15 @@
+org\accenture\oep\util\CryptCodecOpener.class
+org\accenture\oep\controller\LoginController.class
+org\accenture\oep\bean\QuizQuestion.class
+org\accenture\oep\util\DBConnectionUtil.class
+org\accenture\oep\bean\Exam.class
+org\accenture\oep\dao\RegistrationDAOImpl.class
+org\accenture\oep\controller\RegistrationController.class
+org\accenture\oep\dao\RegistrationDAO.class
+org\accenture\oep\bean\UserResultModel.class
+org\accenture\oep\bean\RegistrationModel.class
+org\accenture\oep\service\RegistrationServiceImpl.class
+org\accenture\oep\bean\CandidateScoreProfile.class
+org\accenture\oep\service\RegistrationService.class
+org\accenture\oep\controller\ExamController.class
+org\accenture\oep\bean\CreateDOM.class

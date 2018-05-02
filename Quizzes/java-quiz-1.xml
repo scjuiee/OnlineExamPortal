@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<quiz>
+	<title>Sample Quiz</title>
+	<questions>
+
+		<question>
+			<quizquestion>
+				<![CDATA[Output of the below program will be -<br/><br/>
+
+				public class Q1 {<br/>
+
+				public static void main(String[] args)throws ArithmeticException {<br/>				
+				try{<br/>
+				&nbsp;&nbsp;int i= 10/0;<br/>
+				}catch(Exception ex){<br/>
+				&nbsp;&nbsp;System.out.println("Exception Caught");<br/>
+				}catch(ArithmeticException ex){<br/>
+				&nbsp;&nbsp;System.out.println("Arithemetic Exception Caught");<br/>
+				}catch(Throwable th){<br/>
+				&nbsp;&nbsp;System.out.println("Caught Exception Mother class");<br/>
+				}<br/>
+				}<br/>
+
+				}<br/>
+				]]>
+			</quizquestion>
+			<answer>It prints &quot;Exception Caught&quot;.</answer>
+			<answer>It Prints &quot;Caught Exception Mother Class&quot;.</answer>
+			<answer>It Prints &quot;Arithemetic Exception Caught&quot;.</answer>
+			<answer>Compilation Fails.</answer>
+			<correct>4</correct>
+		</question>
+
+		<question>
+			<quizquestion> 
+			<![CDATA[Output of the below program will be -<br/><br/>
+			public class Q2 {<br/>
+
+			public static void main(String[] args) {<br/>
+				
+				String s1 = "test";<br/>
+				String s2 = new String("test");<br/>
+				
+				System.out.println("Hello");<br/>
+				System.out.println(s1==s2);<br/>
+				System.out.println(s1.equalsIgnoreCase(s2));<br/>
+			}<br/>
+
+			}<br/>
+			]]>
+			</quizquestion>
+			<answer>Compilation Fails</answer>
+			<answer>Hello True True</answer>
+			<answer>Hello False True</answer>
+			<answer>Hello False False</answer>
+			<correct>3</correct>
+		</question>
+
+		<question>
+			<quizquestion>
+		<![CDATA[Output of the below program will be -<br/><br/>			
+			public class A {<br>
+		 		int add(int i, int j){//line 2<br>
+		 		return i+j;<br>
+		 		}
+			}
+			public class B extends A{<br>
+			 		public static void main(String argv[]){<br>
+			 		short s = 9; //line 8<br>
+			 		System.out.println(add(s,6)); //line 9<br>
+			 	}<br>
+				}<br>
+		]]>
+			</quizquestion>
+			<answer>Compilation Error at Line No 2</answer>
+			<answer>Compilation Error at Line No 8</answer>
+			<answer>Compilation Fails at Line No 9</answer>
+			<answer>15</answer>
+			<correct>3</correct>
+		</question>
+
+		<question>
+			<quizquestion>
+			<![CDATA[Output of the below program will be -<br/><br/>
+			
+			public class Class { //LineNo 1<br/>
+
+				public static void main(String[] args)throws ArithmeticException {<br/>		
+					int i = 010;//LineNo 3<br>
+					int j = 07;<br/>
+					System.out.println(i);<br/>
+					System.out.println(j);<br/>
+			}<br/>
+			}<br/>
+			]]>
+
+			</quizquestion>
+			<answer>8 7</answer>
+			<answer>10 7</answer>
+			<answer>Compilation Error at Line No 1</answer>
+			<answer>Compilation Error at Line No 4</answer>
+			<correct>1</correct>
+		</question>
+
+		<question>
+			<quizquestion>Which interface provides the capability to store objects using a key-value pair ?</quizquestion>
+			<answer>java.util.Map</answer>
+			<answer>java.util.Set</answer>
+			<answer>java.util.List</answer>
+			<answer>java.util.Collection</answer>
+			<correct>1</correct>
+		</question>
+
+		<question>
+			<quizquestion>
+			<![CDATA[Output of the below program will be -<br/><br/>
+			public final class ClassA {// Line No 1<br/>
+
+			String surname = "foobar";<br/>
+	
+			public String concatName(String firstName){<br/>
+				String fullName = firstName.concat(surname);<br/>
+				return fullName;<br/>
+				}<br/>
+			}<br/>
+
+			public class ClassB extends ClassA{<br/>
+			
+				public static void main(String args[]){<br/>
+					ClassA clsa = new ClassB();//Line No 2<br/>
+					System.out.println(clsa.concatName("foo"));<br/>
+				}<br/>
+			}<br/>
+			]]>
+			</quizquestion>
+			<answer>Compilation Error at Line No 2</answer>
+			<answer>Compilation Error at Line No 1</answer>
+			<answer>foofoobar</answer>
+			<answer>foobarfoo</answer>
+			<correct>2</correct>
+		</question>
+
+		<question>
+			<quizquestion>Which is the default package that is automatically
+				visible to your program ?
+			</quizquestion>
+			<answer>java.net</answer>
+			<answer>javax.swing</answer>
+			<answer>java.io</answer>
+			<answer>java.lang</answer>
+			<correct>3</correct>
+		</question>
+
+		<question>
+			<quizquestion>Which entry in WEB-INF is used to map a servlet ?
+			</quizquestion>
+			<answer>servlet-mapping</answer>
+			<answer>servlet-registration</answer>
+			<answer>servlet-entry</answer>
+			<answer>servlet-attachment</answer>
+			<correct>1</correct>
+		</question>
+
+		<question>
+			<quizquestion>
+			<![CDATA[Output of the below program will be -<br/><br/>
+			public class A {<br/>
+				private void printName(){<br/>
+					System.out.println("Value-A");<br/>
+				}<br/>
+			}<br/>
+			public class B extends A{<br/>
+				public void printName(){<br/>
+					System.out.println("Value-B");<br/>
+				}<br/>
+			}<br/>
+			public class Test{<br/>
+				public static void main (String[] args) {<br/>
+					B b = new B();<br/>
+					b.printName();<br/>
+				}<br/>
+			}<br/>
+			]]>
+			</quizquestion>
+			<answer>Value-A</answer>
+			<answer>Compilation Fails – as private method can’t be overridden.</answer>
+			<answer>Value-B</answer>
+			<answer>Value-A Value-B</answer>
+			<correct>4</correct>
+		</question>
+
+		<question>
+			<quizquestion>What is the default value of Java datatype boolean?
+			</quizquestion>
+			<answer>true</answer>
+			<answer>false</answer>
+			<answer>1</answer>
+			<answer>0</answer>
+			<correct>2</correct>
+		</question>
+		
+		<question>
+			<quizquestion>
+			<![CDATA[Output of the below program will be -<br/><br/>
+			import java.util.Iterator;<br/>
+			import java.util.TreeSet;<br/>
+
+			public class Test {<br/>
+				public static void main(String... args) {<br/>
+				
+					TreeSet s1 = new TreeSet();<br/>
+					s1.add("one");<br/>
+					s1.add("two");<br/>
+					s1.add("three");<br/>
+					s1.add("one");<br/>
+					Iterator it = s1.iterator();<br/>
+					
+				 while (it.hasNext() ) {<br/>
+				 System.out.print( it.next() + " " );<br/>
+				 }<br/>
+				}<br/>
+			}<br/>
+			]]>
+
+			</quizquestion>
+			<answer>one three two</answer>
+			<answer>one two three</answer>
+			<answer>one two three one</answer>
+			<answer>Runtime Exception</answer>
+			<correct>1</correct>
+		</question>
+
+		<question>
+			<quizquestion>What will happen if we call run() directly, without start() ?
+			</quizquestion>
+			<answer>Program will give a compilation error.</answer>
+			<answer>Nothing will happen both the methods are same.</answer>
+			<answer>Runtime Error</answer>
+			<answer>Thread won't be allocated a new call stack, and start running in the current call stack. </answer>
+			<correct>4</correct>
+		</question>
+		
+		<question>
+			<quizquestion>Which of the given statement is not true about an Java Package ?
+			</quizquestion>
+			<answer>A package can be defined as a group of similar types of classes and interface.</answer>
+			<answer>Package are used in order to avoid name conflicts and to control access of classes and interface.</answer>
+			<answer>A package cannot not have another package inside it.</answer>
+			<answer> Java uses file system directory to store package.</answer>
+			<correct>1</correct>
+		</question>
+		
+		<question>
+			<quizquestion>Which all are valid declaration within an Interface ?
+			</quizquestion>
+			<answer>public static short stop = 23;</answer>
+			<answer>protected short stop = 23;</answer>
+			<answer>transient short stop = 23;</answer>
+			<answer>final void start(short stop); </answer>
+			<correct>1</correct>
+		</question>
+		
+		<question>
+			<quizquestion>
+			<![CDATA[Output of the below program will be -<br/><br/>
+			 import java.util.ArrayList;<br>
+
+			 public class Test2 {<br>
+				public static void main(String[] args) {<br>
+				ArrayList<Integer> numbers = new ArrayList<Integer>();<br>
+				for (int i = 1; i <= 3; i++) {<br>
+					for (int j = 1; j <= 3; j++) {<br>
+						int value = i * 2 / 2;<br>
+						{Integer intObj = new Integer(value); numbers.add(intObj);}<br>
+					} <br>
+				}<br>
+				 {System.out.println(numbers); }<br>
+				}<br>
+			}<br>
+			]]>
+			</quizquestion>
+			<answer>[1, 2, 3, 1, 2, 3, 1, 2, 3]</answer>
+			<answer>[1, 2, 1, 1, 3, 3, 1, 3, 3]</answer>
+			<answer>[1, 1, 1, 2, 2, 2, 3, 3, 3]</answer>
+			<answer>Compilation Falis</answer>
+			<correct>3</correct>
+		</question>
+	</questions>
+</quiz>
